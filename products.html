@@ -10,6 +10,18 @@
             color: rgb(241, 233, 233);
             font-size: 25px;
         }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header a {
+            color: rgb(254, 255, 255);
+            text-decoration: none;
+        }
+
         .product-container {
             display: flex;
             flex-wrap: wrap;
@@ -17,29 +29,55 @@
         }
 
         .product {
-            width: 200px;
-            margin: 15px;
-            padding: 15px;
+            width: 45%; /* Adjusted width to display two products per line */
+            height: 150px; /* Adjusted height based on your design */
+            margin: 10px;
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        
-        
     </style>
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<header>
-    <img src ="images/logotransparent.png" alt ="Transparent back logo" width ="400 px">  
-</header>
-
 <body>
-    <div class="header">
-        <a href="index.html" style = "color:rgb(254, 255, 255); text-decoration:none;" >Home</a>
-        <a href="login.html" style = "color:rgb(254, 255, 255); text-decoration:none;" >Login</a>   
-        <a href="products.html" style = "color:rgb(254, 255, 255); text-decoration:none;">Products</a> 
-        <a href="contact.html" style = "color:rgb(254, 255, 255); text-decoration:none;">Contact</a>    
+    <header>
+        <img src="images/logotransparent.png" alt="Transparent back logo" width="400 px">
+        <div class="header">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$Price</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$Price</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$Price</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product4.jpg" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>$Price</p>
+            <button>Add to Cart</button>
+        </div>
     </div>
 </body>
+
+</html>
